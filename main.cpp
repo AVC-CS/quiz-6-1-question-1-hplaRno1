@@ -9,6 +9,7 @@ int main()
 	int prime1, prime2;
 
 	getTwoValues(begin, end);
+	cout << "The beginning value was" << begin << endl;
 	prime1 = getNextPrime(begin);
 	cout << "The prime number after " << begin << " is " << prime1 << endl;
 	prime2 = getPrevPrime(end);
