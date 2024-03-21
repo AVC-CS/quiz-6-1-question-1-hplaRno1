@@ -40,8 +40,8 @@ int getTwoValues(int begin,int end){
 int getNextPrime(int begin){
     // Finding prime numbers with space between begin and end
     cout << "The beginning number is: " << begin << endl;
-    int i,j, prime, closestPrime;
-    for (i = begin + 1; ; i++){
+    int i,j, prime;
+    for (i = 0; i <= j; i++){
         for(j = 2; j <= (i/2); j++){
             if (i % j == 0){
                 break;
@@ -51,8 +51,8 @@ int getNextPrime(int begin){
             if (j > (i/2)){
                 cout << i << " is a prime number\n";
                 prime = i;
-                if (abs(i - begin) < abs(closestPrime - begin)) {
-                    closestPrime = i;
+                if(i > begin){
+                    cout << i << " is the closest prime number to " << begin << "." << endl;
                 }
             }
     }
